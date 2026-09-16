@@ -56,6 +56,7 @@ int main() {
         {"a", "x"},
         {"b", "y"}
     };
+    // Create a DataFrame of strings
     vector<string> strNames = {"col1", "col2"};
     DataFrame<string> strDf(strValues, strNames);
  
@@ -63,6 +64,7 @@ int main() {
     for (const string& v : strDf.row(0)) cout << v << " ";
     cout << endl;
  
+
     return 0;
 }
  
